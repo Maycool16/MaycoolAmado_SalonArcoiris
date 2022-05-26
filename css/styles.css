@@ -38,7 +38,6 @@ body{
 #hero{
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-    background-image: url(../assets/rainbow.jpg);
     background-repeat: repeat;
     background-size: repeat;
     background-position: center;
@@ -48,3 +47,94 @@ body{
     border-radius: 2.5rem;
 
 }
+.formulario{
+    text-align: center;
+    width: 100%;
+}
+/* Seccion Contacto*/
+	.conteiner_contacto{
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 2em;
+		background-color: grey;
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+		border-radius: 1.5rem;
+	}
+	.titulo{
+		text-align: center;
+		font-size: 2em;
+	}
+	.contacto_wrapper{
+		box-shadow: 0 0 20px cyan;
+	}
+	.contacto_wrapper > * {
+		padding: 1em;
+	}
+	.contacto_form{
+		background: #d1cece;
+	}
+	.contacto_form form{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.contacto_form form .block{
+		grid-column: 1 / 3;
+	}
+	.contacto_form form p{
+		margin: 0;
+		padding: 1em;
+	}
+
+	.contacto_form form button,
+	.contacto_form input,
+	.contacto_form textarea{
+		width: 100%;
+		padding: 7em;
+		border: none;
+		outline: 0;
+		border-bottom: 1px solid grey;
+		padding: 1em;
+	}
+	.contacto_form textarea{
+		height: 100px;
+	}
+	.contacto_form form button{
+		background: rgb(55, 173, 173);
+		color: aquamarine;
+		border: 0;
+		text-transform: uppercase;
+		padding: 1em;
+	}
+	.contacto_form form button:hover,
+	.contacto_form form button:focus{
+		background: rgb(28, 53, 53);
+	}
+	.contacto_info {
+		background:rgb(31 30 30 / 62%);
+	}
+	.contacto_info h4{
+		text-align: center;
+		margin: 0 0 1rem 0;
+	}
+	.contacto_info p img{
+		padding: 1.5rem;
+	}
+	/* Large Screen*/
+	@media (min-width: 700px){
+		.conteiner_contacto{
+			padding: 2rem;
+		} 
+		.contacto_wrapper{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+		.contacto_wrapper > *{
+			padding: 2em;
+		}
+	}
+	.b_contacto{
+		background: rgb(238,28,1);
+		background: linear-gradient(90deg, rgba(238,28,1,1) 0%, rgba(248,253,29,1) 50%, rgba(99,69,252,1) 100%);
+	}
